@@ -1,17 +1,12 @@
 
 import './App.css';
-import Login from './pages/Login';
-import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import Login from './pagina/Login';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={  <Login />} />
-        </Routes>
-      </BrowserRouter>
-      
+      <Login/>
     </div>
   );
 }
