@@ -7,7 +7,7 @@ const BarraNavegacion = () => {
           <NavLink className='productos' activeClassName="active" to='/productos' >Productos</NavLink>
           <NavLink className='micarrito' activeClassName="active" to='/micarrito' >Mi carrito</NavLink>
           <NavLink className='micuenta' activeClassName="active" to='/micuenta' >Mi cuenta</NavLink>
-          <NavLink className='Login'activeClassName="active" to='/'>Login</NavLink>  
+          <NavLink className='Login'activeClassName="active" to='/'>Logout</NavLink>  
           
       </nav>)
     }

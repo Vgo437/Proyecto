@@ -5,21 +5,16 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  NavLink
+  Route
 }from 'react-router-dom';
-import BarraNavegacion from './pagina/BarraNavegacion';
 import MiCarrito from './pagina/MiCarrito';
 import MiCuenta from './pagina/MiCuenta';
 import Productos from './pagina/Productos';
-import Encabezado from './pagina/Encabezado';
 
 function App() {
   return (
     <div className="App">
     <Router>
-      <Encabezado/>
-      <BarraNavegacion/>
       <Routes>
         <Route path='/' exact element={<Login/>}/>
         <Route path='*' element={<>not found</>}/>
