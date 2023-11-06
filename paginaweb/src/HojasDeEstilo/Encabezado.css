@@ -1,0 +1,9 @@
+
+
+.logo,.icono,.h1{
+    height: 100px;
+    width: 100px;
+    align-items: end;
+    padding-left: 200px;
+    padding-right: 200px;
+}

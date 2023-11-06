@@ -7,7 +7,22 @@
     height: 100%;
     width: 100%;
 }
+*{
+    background-color: beige;
+}
 
+input{
+    background-color: aliceblue;
+}
+button{
+    margin-top: 12px;
+    margin-right: 15px;
+    background-color:#C19A6B;
+    color:maroon;
+    border: 1px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
 img{
     
     width: 200px;

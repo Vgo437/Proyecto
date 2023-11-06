@@ -1,0 +1,10 @@
+.Login,.micarrito,.micuenta,.productos{
+    width:150px;
+    margin:10px 20px; 
+    padding:10px; 
+    font-size:italic;
+    background-color:#C19A6B;
+    color:maroon;
+    border: 1px solid black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
