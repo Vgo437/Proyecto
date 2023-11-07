@@ -6,8 +6,10 @@ const Encabezado = () => {
     return(
         <div className="contenedorEncabezado">
         <img className='logo'src={Logo} alt="imagen del logo"/>
-        <img className='icono'src={Icono} alt="imagen del icono"/>
+        <div className="contenedorIcono">
         <h1 className="h1">Hola Persona</h1>
+        <img className='icono'src={Icono} alt="imagen del icono"/>
+        </div>
         </div>
     );
 }

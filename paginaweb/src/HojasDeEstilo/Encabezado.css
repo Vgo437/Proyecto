@@ -1,9 +1,26 @@
 
 
-.logo,.icono,.h1{
-    height: 100px;
-    width: 100px;
-    align-items: end;
-    padding-left: 200px;
-    padding-right: 200px;
+.contenedorEncabezado{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+ 
 }
+
+
+.contenedorIcono{
+    display:flex;
+    
+}
+
+.h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+}
+.logo,.icono{
+    height: 150px;
+    width: 150px;
+}
+
