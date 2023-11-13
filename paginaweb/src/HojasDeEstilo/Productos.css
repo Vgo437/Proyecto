@@ -1,9 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .contenedorLista{
    margin-top: 80px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 20px;
 }
+
 li{
     margin: 8px;
 }
 
+*{
+    background-color: transparent;
+}
+
+.targetas{
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.targeta{
+    height: 350px;
+    width: 300px;
+    margin: 40px;
+    transition: 5ms;
+}
+
+.cerveza1, .cerveza2, .cerveza3, .ron1, .ron2, .ron3, .whisky1, .whisky2, .whisky3{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #00a5ec;
+    transition: 5ms;
+    position: absolute;
+}
+
+.imagen_cervezas1{
+    height: 350px;
+    width: 200px;
+    background-image: url(../imagenes/cerveza1_1.png);
+    background-size: contain;
+    margin-bottom: 160px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_cervezas2{
+    height: 350px;
+    width: 250px;
+    background-image: url(../imagenes/cerveza2_1.png);
+    background-size: contain;
+    margin-bottom: 180px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_cervezas3{
+    height: 350px;
+    width: 200px;
+    background-image: url(../imagenes/cerveza3_1.png);
+    background-size: contain;
+    margin-bottom: 125px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_ron1{
+    height: 400px;
+    width: 240px;
+    background-image: url(../imagenes/ron1_1.png);
+    background-size: contain;
+    margin-bottom: 112px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_ron2{
+    height: 400px;
+    width: 242px;
+    background-image: url(../imagenes/ron2_1.png);
+    background-size: contain;
+    margin-bottom: 122px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_ron3{
+    height: 450px;
+    width: 290px;
+    background-image: url(../imagenes/ron3_1.png);
+    background-size: contain;
+    margin-bottom: 108px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_whisky1{
+    height: 400px;
+    width: 240px;
+    background-image: url(../imagenes/whisky1_1.png);
+    background-size: contain;
+    margin-bottom: 112px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_whisky2{
+    height: 400px;
+    width: 242px;
+    background-image: url(../imagenes/whisky2_1.png);
+    background-size: contain;
+    margin-bottom: 122px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_whisky3{
+    height: 450px;
+    width: 290px;
+    background-image: url(../imagenes/whisky3_1.png);
+    background-size: contain;
+    margin-bottom: 108px;
+    transition: 5ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.detalle{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+.targeta:hover{
+    transform: scale(1.1);
+}
+
+.targeta:hover .imagen_cervezas1{
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/cerveza1_3.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: 200px;
+}
+
+.targeta:hover .imagen_cervezas2{
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/cerveza2_2.png);
+    margin-bottom: 50px;
+}
+
+.targeta:hover .imagen_cervezas3{
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/cerveza3_2.png);
+    margin-bottom: 80px;
+}
+
+.targeta:hover .imagen_ron1{
+    width: 210px;
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/ron1_2.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: -20px;
+}
+
+.targeta:hover .imagen_ron2{
+    width: 220px;
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/ron2_2.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: -10px;
+}
+
+.targeta:hover .imagen_ron3{
+    height: 400px;
+    width: 190px;
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/ron3_2.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: 0px;
+}
+
+.targeta:hover .imagen_whisky1{
+    width: 210px;
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/whisky1_2.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: -20px;
+}
+
+.targeta:hover .imagen_whisky2{
+    width: 220px;
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/whisky2_2.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: -10px;
+}
+
+.targeta:hover .imagen_whisky3{
+    height: 400px;
+    width: 190px;
+    transform: translatey(-40px);
+    transition: 5ms;
+    filter: none;
+    background-image: url(../imagenes/whisky3_2.png);
+    filter: drop-shadow(5px -4px 10px #000);
+    margin-bottom: 0px;
+}
+
+.targeta:hover .cerveza1{
+    background-image: radial-gradient(white,rgb(255, 0, 221));
+}
+
+.targeta:hover .cerveza2{
+    background-image: radial-gradient(white,rgb(68, 68, 68));
+}
+
+.targeta:hover .cerveza3{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.targeta:hover .ron1{
+    background-image: radial-gradient(white,rgb(255, 0, 221));
+}
+
+.targeta:hover .ron2{
+    background-image: radial-gradient(white,rgb(68, 68, 68));
+}
+
+.targeta:hover .ron3{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+.targeta:hover .whisky1{
+    background-image: radial-gradient(white,rgb(255, 0, 221));
+}
+
+.targeta:hover .whisky2{
+    background-image: radial-gradient(white,rgb(68, 68, 68));
+}
+
+.targeta:hover .whisky3{
+    background-image: radial-gradient(white,rgb(255, 0, 0));
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: auto;
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+}
