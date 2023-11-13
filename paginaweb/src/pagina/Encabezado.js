@@ -11,7 +11,7 @@ const Encabezado = () => {
             <img className='logo'src={Logo} alt="imagen del logo"/>
         </NavLink>
         <div className="contenedorIcono">
-        <h1 className="h1">Hola Persona</h1>
+        <h2 className="h2">Hola Persona</h2>
         <NavLink to='/MiCuenta'>
             <img className='icono'src={Icono} alt="imagen del icono"/>
         </NavLink>

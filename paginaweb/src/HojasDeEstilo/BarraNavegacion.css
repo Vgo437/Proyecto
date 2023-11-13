@@ -3,9 +3,16 @@
     margin:10px 20px; 
     padding:10px; 
     font-size:italic;
-    background-color:#C19A6B;
-    color:maroon;
+    background-color:rgba(244,139,0,255);
+    color:rgb(0, 0, 0);
     border: 1px solid black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Impact, Tahoma, sans-serif;
     border-radius: 13px;
+}
+
+.botones{
+    margin-left: 140px;
+    margin-top: -110px;
+    margin-bottom: 100px;
+    background-color: rgb(25, 25, 25);
 }

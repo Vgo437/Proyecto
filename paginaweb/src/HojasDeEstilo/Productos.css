@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .contenedorLista{
-   margin-top: 80px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: Impact, Verdana, Tahoma, sans-serif;
    font-size: 20px;
+   display: inline-flex;
+   justify-content: flex-start;
+   margin-left: 50px;
+   margin-bottom: 80px;
 }
 
 li{
-    margin: 8px;
+    margin: 10px;
+    margin-top: 4px;
+    list-style-type: none;
 }
 
-*{
-    background-color: transparent;
+h3{
+    cursor: default;
 }
 
 .targetas{
@@ -48,6 +53,7 @@ li{
     background-size: contain;
     margin-bottom: 160px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -58,6 +64,7 @@ li{
     background-size: contain;
     margin-bottom: 180px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -68,6 +75,7 @@ li{
     background-size: contain;
     margin-bottom: 125px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -78,6 +86,7 @@ li{
     background-size: contain;
     margin-bottom: 112px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -88,6 +97,7 @@ li{
     background-size: contain;
     margin-bottom: 122px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -98,6 +108,7 @@ li{
     background-size: contain;
     margin-bottom: 108px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -106,28 +117,31 @@ li{
     width: 240px;
     background-image: url(../imagenes/whisky1_1.png);
     background-size: contain;
-    margin-bottom: 112px;
+    margin-bottom: 110px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
 .imagen_whisky2{
     height: 400px;
-    width: 242px;
+    width: 240px;
     background-image: url(../imagenes/whisky2_1.png);
     background-size: contain;
-    margin-bottom: 122px;
+    margin-bottom: 108px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
 .imagen_whisky3{
-    height: 450px;
-    width: 290px;
+    height: 426px;
+    width: 272px;
     background-image: url(../imagenes/whisky3_1.png);
     background-size: contain;
-    margin-bottom: 108px;
+    margin-bottom: 106px;
     transition: 5ms;
+    background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
 
@@ -206,28 +220,28 @@ li{
 }
 
 .targeta:hover .imagen_whisky1{
-    width: 210px;
+    width: 250px;
     transform: translatey(-40px);
     transition: 5ms;
     filter: none;
     background-image: url(../imagenes/whisky1_2.png);
     filter: drop-shadow(5px -4px 10px #000);
-    margin-bottom: -20px;
+    margin-bottom: 15px;
 }
 
 .targeta:hover .imagen_whisky2{
-    width: 220px;
+    width: 172px;
     transform: translatey(-40px);
     transition: 5ms;
     filter: none;
     background-image: url(../imagenes/whisky2_2.png);
     filter: drop-shadow(5px -4px 10px #000);
-    margin-bottom: -10px;
+    margin-bottom: 0px;
 }
 
 .targeta:hover .imagen_whisky3{
     height: 400px;
-    width: 190px;
+    width: 255px;
     transform: translatey(-40px);
     transition: 5ms;
     filter: none;
@@ -276,6 +290,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 
 p{
@@ -283,4 +298,5 @@ p{
     width: 90%;
     font-size: 20px;
     text-align: center;
+    background-color: transparent;
 }

@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import '../HojasDeEstilo/BarraNavegacion.css'
 const BarraNavegacion = () => {
     return(
-      <nav>
+      <nav className="botones">
           <NavLink className='productos' activeClassName="active" to='/productos' >Productos</NavLink>
           <NavLink className='micarrito' activeClassName="active" to='/micarrito' >Mi carrito</NavLink>
           <NavLink className='micuenta' activeClassName="active" to='/micuenta' >Mi cuenta</NavLink>
