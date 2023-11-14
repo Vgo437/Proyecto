@@ -4,9 +4,13 @@ import LogoLicorera from '../imagenes/logoLicorera.png'
 import '../HojasDeEstilo/Login.css';
 import { useNavigate } from 'react-router-dom';
 
-const Login =(usuario,pass) =>{
+const Login = (params) =>{
+    const {datos, borrar, guardar} = params
     const navigate = useNavigate();
-    const handleLogin = () => {navigate('/Productos')};
+    const handleLogin = () => {navigate('/Inicio')};
+
+    // reseteo de los datos del login
+    borrar();
 
     return(
         <div className="contenedorLogin">
@@ -17,13 +21,18 @@ const Login =(usuario,pass) =>{
             <form>
                 <label>
                     usuario<br/>
-                    <input type='text' name='nombre'></input>
+                    <input className='nombre' type='text' name='nombre'></input>
                 </label><br/>
                 <label>
                     Contraseña<br/>
                     <input type='password' name='contraseña'/>
                 </label><br/>
-                <button className='botonInicio' onClick={handleLogin}>Inicio Sesion</button>
+                <button className='botonInicio' onClick={() => 
+                    {
+                        guardar(document.getElementsByName("nombre"), document.getElementsByName("contraseña"))
+                        handleLogin();
+                    }
+                }>Inicio Sesion</button>
                 <button className='botonCrear'>Crear Sesion</button>
             </form>
             </div>
