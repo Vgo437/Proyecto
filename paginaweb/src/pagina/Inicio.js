@@ -6,10 +6,10 @@ import '../HojasDeEstilo/Inicio.css';
 
 
 const Inicio = (params) => {
-    let {nombreUsuario} = params
+   // let {nombreUsuario} = params
     return(
         <div className="contenedorInicio">
-            <Encabezado nombreUsuario = {nombreUsuario}/>
+            <Encabezado/>
             <BarraNavegacion/>
             <img className="LicorInicio" src={LicorInicio} alt="pagina de inicio"/>
         </div>

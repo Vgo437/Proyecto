@@ -15,28 +15,31 @@ import Ron from './pagina/productos/Ron.js';
 import Whisky from './pagina/productos/Whisky.js';
 import Inicio from './pagina/Inicio.js';
 
-function App() {
 
-  const usuarioDatos = useState({ nombre: 'sin nombre aun', contraseña: '123' }) 
+
+function App() {
+  const [usuarioDatos, setUsuario] = useState({ nombre: 'sin nombre aun', contraseña: '123' }) 
 
   const guardarDatosUsuario = (nombre, contraseña) => {
-    usuarioDatos.nombre = nombre
-    usuarioDatos.contraseña = contraseña
-    console.log(usuarioDatos);
+    setUsuario({...usuarioDatos,nombre: nombre})
+    setUsuario({...usuarioDatos,contraseña: contraseña})
   }
 
   const borrarDatosUsuario = () => {
-    usuarioDatos.nombre = ""
-    usuarioDatos.contraseña = ""
+    setUsuario({...usuarioDatos,nombre: ''})
+    setUsuario({...usuarioDatos,contraseña:''})
   }
+
+  //guardarDatosUsuario("vanessa", "123456")
+  console.log(usuarioDatos);
 
   return (
     <div className="App">
     <Router>
       <Routes>
-        <Route path='/' exact element={<Login datos={usuarioDatos} borrar={borrarDatosUsuario} guardar={guardarDatosUsuario} />}/>
+        <Route path='/' exact element={<Login /* borrar={() => borrarDatosUsuario} guardar={() => guardarDatosUsuario}*/ />}/>
         <Route path='*' element={<>not found</>}/>
-        <Route path='/inicio' element={<Inicio nombreUsuario={usuarioDatos.nombre}/>}/>
+        <Route path='/inicio' element={<Inicio /*nombreUsuario={usuarioDatos.nombre}*//>}/>
         <Route path='/micarrito' element={<MiCarrito/>}/>
         <Route path='/micuenta' element={<MiCuenta/>}/>
         <Route path='/productos' element={<Productos/>}/>
@@ -47,6 +50,7 @@ function App() {
     </Router>
     </div>
   );
+  
 }
 
 export default App;

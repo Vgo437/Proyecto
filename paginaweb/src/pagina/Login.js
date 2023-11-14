@@ -5,12 +5,12 @@ import '../HojasDeEstilo/Login.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = (params) =>{
-    const {datos, borrar, guardar} = params
+   //const {datos, borrar, guardar} = params
     const navigate = useNavigate();
     const handleLogin = () => {navigate('/Inicio')};
 
     // reseteo de los datos del login
-    borrar();
+    //.borrar();
 
     return(
         <div className="contenedorLogin">
@@ -29,7 +29,7 @@ const Login = (params) =>{
                 </label><br/>
                 <button className='botonInicio' onClick={() => 
                     {
-                        guardar(document.getElementsByName("nombre"), document.getElementsByName("contraseña"))
+                        //guardar(document.getElementsByName("nombre"), document.getElementsByName("contraseña"))
                         handleLogin();
                     }
                 }>Inicio Sesion</button>
