@@ -5,7 +5,7 @@ import '../HojasDeEstilo/Login.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = (params) =>{
-   //const {datos, borrar, guardar} = params
+   const {datos, borrar, guardar} = params
     const navigate = useNavigate();
     const handleLogin = () => {navigate('/Inicio')};
 
