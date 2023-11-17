@@ -8,7 +8,7 @@ const Encabezado = (params) => {
     const {nombreUsuario} = params
     return(
         <div className="contenedorEncabezado">
-        <NavLink to='/productos'>
+        <NavLink to='/Inicio'>
             <img className='logo'src={Logo} alt="imagen del logo"/>
         </NavLink>
         <div className="contenedorIcono">

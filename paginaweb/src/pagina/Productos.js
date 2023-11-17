@@ -16,9 +16,9 @@ const Productos = () => {
             <nav>
                 <ul className="contenedorLista">
                     <h3>Filtrar: </h3>
-                    <li><NavLink className="cervezas" to='/productos/cerveza'>Cervezas</NavLink></li>
-                    <li><NavLink className="ron" to='/productos/ron'>Ron</NavLink></li>
-                    <li><NavLink className="whisky" to='/productos/whisky'>Whisky</NavLink></li>
+                    <li><NavLink className="filtroCervezas" to='/productos/cerveza'>Cervezas</NavLink></li>
+                    <li><NavLink className="filtroRon" to='/productos/ron'>Ron</NavLink></li>
+                    <li><NavLink className="filtroWhisky" to='/productos/whisky'>Whisky</NavLink></li>
                 </ul>
             </nav>
 

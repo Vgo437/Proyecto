@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.contenedorLista{
+.contenedorLista, .volver{
    font-family: Impact, Verdana, Tahoma, sans-serif;
    font-size: 20px;
    display: inline-flex;
    justify-content: flex-start;
    margin-left: 50px;
-   margin-bottom: 80px;
+   margin-bottom: 40px;
 }
 
 li{
@@ -20,7 +20,7 @@ h3{
 }
 
 .targetas{
-    height: 100vh;
+    height: 460px;
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap; 
@@ -30,8 +30,11 @@ h3{
 .targeta{
     height: 350px;
     width: 300px;
-    margin: 40px;
-    transition: 5ms;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    transition: 300ms;
 }
 
 .cerveza1, .cerveza2, .cerveza3, .ron1, .ron2, .ron3, .whisky1, .whisky2, .whisky3{
@@ -42,7 +45,7 @@ h3{
     align-items: center;
     border-radius: 10%;
     background-color: #00a5ec;
-    transition: 5ms;
+    transition: 300ms;
     position: absolute;
 }
 
@@ -52,7 +55,7 @@ h3{
     background-image: url(../imagenes/cerveza1_1.png);
     background-size: contain;
     margin-bottom: 160px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -63,7 +66,7 @@ h3{
     background-image: url(../imagenes/cerveza2_1.png);
     background-size: contain;
     margin-bottom: 180px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -74,7 +77,7 @@ h3{
     background-image: url(../imagenes/cerveza3_1.png);
     background-size: contain;
     margin-bottom: 125px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -85,7 +88,7 @@ h3{
     background-image: url(../imagenes/ron1_1.png);
     background-size: contain;
     margin-bottom: 112px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -96,7 +99,7 @@ h3{
     background-image: url(../imagenes/ron2_1.png);
     background-size: contain;
     margin-bottom: 122px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -107,7 +110,7 @@ h3{
     background-image: url(../imagenes/ron3_1.png);
     background-size: contain;
     margin-bottom: 108px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -118,7 +121,7 @@ h3{
     background-image: url(../imagenes/whisky1_1.png);
     background-size: contain;
     margin-bottom: 110px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -129,7 +132,7 @@ h3{
     background-image: url(../imagenes/whisky2_1.png);
     background-size: contain;
     margin-bottom: 108px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -140,7 +143,7 @@ h3{
     background-image: url(../imagenes/whisky3_1.png);
     background-size: contain;
     margin-bottom: 106px;
-    transition: 5ms;
+    transition: 300ms;
     background-color: transparent;
     filter: drop-shadow(5px -4px 10px #000);
 }
@@ -165,7 +168,7 @@ h3{
 
 .targeta:hover .imagen_cervezas1{
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/cerveza1_3.png);
     filter: drop-shadow(5px -4px 10px #000);
@@ -174,7 +177,7 @@ h3{
 
 .targeta:hover .imagen_cervezas2{
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/cerveza2_2.png);
     margin-bottom: 50px;
@@ -182,7 +185,7 @@ h3{
 
 .targeta:hover .imagen_cervezas3{
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/cerveza3_2.png);
     margin-bottom: 80px;
@@ -191,7 +194,7 @@ h3{
 .targeta:hover .imagen_ron1{
     width: 210px;
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/ron1_2.png);
     filter: drop-shadow(5px -4px 10px #000);
@@ -201,7 +204,7 @@ h3{
 .targeta:hover .imagen_ron2{
     width: 220px;
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/ron2_2.png);
     filter: drop-shadow(5px -4px 10px #000);
@@ -212,7 +215,7 @@ h3{
     height: 400px;
     width: 190px;
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/ron3_2.png);
     filter: drop-shadow(5px -4px 10px #000);
@@ -222,7 +225,7 @@ h3{
 .targeta:hover .imagen_whisky1{
     width: 250px;
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/whisky1_2.png);
     filter: drop-shadow(5px -4px 10px #000);
@@ -232,7 +235,7 @@ h3{
 .targeta:hover .imagen_whisky2{
     width: 172px;
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/whisky2_2.png);
     filter: drop-shadow(5px -4px 10px #000);
@@ -243,7 +246,7 @@ h3{
     height: 400px;
     width: 255px;
     transform: translatey(-40px);
-    transition: 5ms;
+    transition: 300ms;
     filter: none;
     background-image: url(../imagenes/whisky3_2.png);
     filter: drop-shadow(5px -4px 10px #000);

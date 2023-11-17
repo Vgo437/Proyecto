@@ -1,15 +1,7 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
 
 const Cerveza = () =>{
     return (
-        <div>
-            <nav>
-                <ul>
-                    <li><NavLink className="volver" to='/Productos'>Volver</NavLink></li>
-                </ul>
-            </nav>
-
         <div class="targetas">
             <div class="targeta">
                 <div class="cerveza1">
@@ -40,8 +32,6 @@ const Cerveza = () =>{
                     </div>
                 </div>
             </div>
-        </div>
-
         </div>
     )
 }
