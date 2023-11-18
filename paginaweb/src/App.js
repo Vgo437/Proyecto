@@ -1,7 +1,7 @@
 
 import './App.css';
 import Login from './pagina/Login.js';
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,27 +14,30 @@ import Cerveza from './pagina/productos/Cervezas.js';
 import Ron from './pagina/productos/Ron.js';
 import Whisky from './pagina/productos/Whisky.js';
 import Inicio from './pagina/Inicio.js';
-
-
+import FCerveza from "./pagina/filtro/FiltroCerverzas.js";
+import FRon from "./pagina/filtro/FiltroRon.js";
+import FWhisky from "./pagina/filtro/FiltroWhisky.js";
 
 function App() {
-  const [usuarioDatos, setUsuario] = useState({ nombre: 'sin nombre aun', contraseña: '123' }) 
+  //const [usuarioDatos, setUsuario] = useState({ nombre: 'sin nombre aun', contraseña: '123' }) 
 
-  const guardarDatosUsuario = (nombre, contraseña) => {
+  /*const guardarDatosUsuario = (nombre, contraseña) => {
     setUsuario({...usuarioDatos,nombre: nombre})
     setUsuario({...usuarioDatos,contraseña: contraseña})
-  }
+  }*/
 
-  const borrarDatosUsuario = () => {
+  /*const borrarDatosUsuario = () => {
     setUsuario({...usuarioDatos,nombre: ''})
     setUsuario({...usuarioDatos,contraseña:''})
-  }
+  }*/
 
   //guardarDatosUsuario("vanessa", "123456")
-  console.log(usuarioDatos);
+  //console.log(usuarioDatos);
 
   return (
     <div className="App">
+
+      <fCerveza />
     <Router>
       <Routes>
         <Route path='/' exact element={<Login /* borrar={() => borrarDatosUsuario} guardar={() => guardarDatosUsuario}*/ />}/>
@@ -43,9 +46,12 @@ function App() {
         <Route path='/micarrito' element={<MiCarrito/>}/>
         <Route path='/micuenta' element={<MiCuenta/>}/>
         <Route path='/productos' element={<Productos/>}/>
-        <Route path='/productos/cerveza' element={<Cerveza/>}/>
-        <Route path='/productos/ron' element={<Ron/>}/>
-        <Route path='/productos/whisky' element={<Whisky/>}/>
+        <Route path='/cerveza' element={<Cerveza/>}/>
+        <Route path='/ron' element={<Ron/>}/>
+        <Route path='/whisky' element={<Whisky/>}/>
+        <Route path='/productos/cerveza' element={<FCerveza/>}/>
+        <Route path='/productos/ron' element={<FRon/>}/>
+        <Route path='/productos/whisky' element={<FWhisky/>}/>
       </Routes>
     </Router>
     </div>
@@ -54,4 +60,3 @@ function App() {
 }
 
 export default App;
-
