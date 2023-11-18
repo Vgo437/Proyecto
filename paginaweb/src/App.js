@@ -18,20 +18,7 @@ import FRon from "./pagina/filtro/FiltroRon.js";
 import FWhisky from "./pagina/filtro/FiltroWhisky.js";
 
 function App() {
-  //const [usuarioDatos, setUsuario] = useState({ nombre: 'sin nombre aun', contraseña: '123' }) 
-
-  /*const guardarDatosUsuario = (nombre, contraseña) => {
-    setUsuario({...usuarioDatos,nombre: nombre})
-    setUsuario({...usuarioDatos,contraseña: contraseña})
-  }*/
-
-  /*const borrarDatosUsuario = () => {
-    setUsuario({...usuarioDatos,nombre: ''})
-    setUsuario({...usuarioDatos,contraseña:''})
-  }*/
-
-  //guardarDatosUsuario("vanessa", "123456")
-  //console.log(usuarioDatos);
+ 
 
   return (
     <div className="App">
@@ -39,9 +26,9 @@ function App() {
       <fCerveza />
     <Router>
       <Routes>
-        <Route path='/' exact element={<Login /* borrar={() => borrarDatosUsuario} guardar={() => guardarDatosUsuario}*/ />}/>
+        <Route path='/' exact element={<Login/>}/>
         <Route path='*' element={<>not found</>}/>
-        <Route path='/inicio' element={<Inicio /*nombreUsuario={usuarioDatos.nombre}*//>}/>
+        <Route path='/inicio' element={<Inicio />}/>
         <Route path='/micarrito' element={<MiCarrito/>}/>
         <Route path='/micuenta' element={<MiCuenta/>}/>
         <Route path='/productos' element={<Productos/>}/>
