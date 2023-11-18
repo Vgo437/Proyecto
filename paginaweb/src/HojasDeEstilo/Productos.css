@@ -19,6 +19,44 @@ h3{
     cursor: default;
 }
 
+.btn{
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    cursor: pointer;
+    background-color:rgba(244,139,0,255);
+    color:rgb(0, 0, 0);
+    border: 1px solid black;
+    font-family: Impact, Tahoma, sans-serif;
+    font-size:x-large;
+    border-radius: 13px;
+}
+
+.precio{
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+    font-family: Impact, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+.cantidad{
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.valor{
+    width: 30px;
+    height: 30px;
+    font-family: Impact, Tahoma, sans-serif;
+    font-size:xx-large;
+    margin: 10px;
+    margin-left: 86px;
+}
+
 .targetas{
     height: 460px;
     max-width: 1200px;

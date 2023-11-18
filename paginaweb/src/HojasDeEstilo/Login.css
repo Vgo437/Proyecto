@@ -16,14 +16,16 @@
 input{
     background-color: aliceblue;
 }
-button{
+.botonInicio, .botonCrear{
+    height: 18px;
+    width: 80px;
     margin-top: 12px;
     margin-right: 15px;
-    background-color:#C19A6B;
-    color:maroon;
+    background-color:rgba(244,139,0,255);
+    color:rgb(0, 0, 0);
     border: 1px solid black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-family: Impact, Tahoma, sans-serif;
+    border-radius: 13px;
 }
 img{
     
