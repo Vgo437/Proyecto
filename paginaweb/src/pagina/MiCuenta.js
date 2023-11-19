@@ -11,9 +11,9 @@ const MiCuenta = () =>{
         <div className="contenedorMiCuenta">
         <Encabezado/>
         <BarraNavegacion/>
-        <img src={icono} alt="icono de persona" />
-        <h1>Usuario: {nombreUsuario.nombreUsuario} </h1>
-        <h1>Ciudad: Medellin</h1>
+        <img src={icono} alt="icono de persona" className="fotoPersona"/>
+        <h1 className="info">Usuario: {nombreUsuario.nombreUsuario} </h1>
+        <h1 className="info">Ciudad: Medellin</h1>
         </div>
     );
 }

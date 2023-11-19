@@ -1,12 +1,14 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { incrementar1, decrementar1, reset1 } from '../../utilidades/contador1Slice';
-import { incrementar2, decrementar2, reset2 } from '../../utilidades/contador2Slice';
+import { incrementar1, decrementar1 } from '../../utilidades/contador1Slice';
+import { incrementar2, decrementar2 } from '../../utilidades/contador2Slice';
+import { incrementar3, decrementar3 } from '../../utilidades/contador3Slice';
 
 const Cerveza = () =>{
     const dispatch = useDispatch();
     const contador1 = useSelector((state) => state.contador1);
     const contador2 = useSelector((state) => state.contador2);
+    const contador3 = useSelector((state) => state.contador3);
 
     return (
         
@@ -50,9 +52,9 @@ const Cerveza = () =>{
                         <h2>Club Colombia 330ml</h2>
                         <p>Cerveza de 330ml en envase de vidrio.</p>
                         <div className="cantidad">
-                            <button className="btn" /*onClick={() => setContador3((contador3) => contador3 + 1)}*/>+</button>
-                            <p className="precio">{/*contador3*/}</p>
-                            <button className="btn" /*onClick={restarCont3}*/>-</button>
+                            <button className="btn" onClick={() => dispatch(incrementar3())}>+</button>
+                            <p className="precio">{contador3.value}</p>
+                            <button className="btn" onClick={() => dispatch(decrementar3())}>-</button>
                             <h2 className="valor">$4000</h2>
                         </div>
                     </div>

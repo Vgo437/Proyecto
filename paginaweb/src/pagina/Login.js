@@ -4,7 +4,7 @@ import LogoLicorera from '../imagenes/logoLicorera.png'
 import '../HojasDeEstilo/Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
-import { guardarUsuario, borrarUsuario } from '../utilidades/login/loginSlice';
+import { guardarUsuario } from '../utilidades/login/loginSlice';
 import { useState } from 'react';
 
 const Login = (params) =>{
